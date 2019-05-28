@@ -4,6 +4,7 @@ def intersection(function,x0,x1): #function is the f we want to find its root an
     x_n = x0
     x_n1 = x1
     while True:
+        
         x_n2 = x_n1-(function(x_n1)/((function(x_n1)-function(x_n))/(x_n1-x_n)))
         if abs(x_n2 - x_n1) < 10**-5:
             return x_n2
